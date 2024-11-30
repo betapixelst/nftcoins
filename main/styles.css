@@ -1,0 +1,97 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark background for a crypto vibe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    text-align: center;
+    color: #e4e4e4; /* Light text */
+}
+
+/* Container for form and logo */
+.container {
+    background-color: #333; /* Dark form background */
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo styling */
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input field styling */
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555; /* Dark border */
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #444; /* Darker background for input fields */
+    color: white; /* Light text */
+}
+
+input[type="text"]::placeholder {
+    color: #aaa; /* Lighter placeholder text */
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    background-color: #ffcc00; /* Neon yellow for crypto feel */
+    border: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add space between buttons and form fields */
+}
+
+button:hover {
+    background-color: #ff9900; /* Darker yellow on hover */
+}
+
+button:active {
+    background-color: #e68a00; /* Even darker yellow on click */
+}
+
+button:disabled {
+    background-color: #888; /* Disable color for inactive button */
+    cursor: not-allowed;
+}
+
+/* Add responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+}
